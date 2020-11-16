@@ -1,0 +1,25 @@
+INSERT INTO actions (monster_id, name, choice, description, result)
+VALUES
+      (1, 'Nurikabe', 'Go past', 'You try to go past. The wall moves in front of you. You continue this awkward shuffle until death.', 'LOSE'),
+      (1, 'Nurikabe', 'Attack', 'You look around and find a big stick on the ground. You hit the bottom part of the wall, and it disappears.', 'CONTINUE'),
+      (2, 'Kuchisake-onna', 'Say yes', 'You reply: "Yes." She screams, "You liar!" and attacks you.', 'LOSE'),
+      (2, 'Kuchisake-onna', 'Say no', 'You reply: "No." She screams in rage, and attacks you.', 'LOSE'),
+      (2, 'Kuchisake-onna', 'Say maybe', 'You reply: "Maybe?" She is confused by your answer, and you manage to run away.', 'CONTINUE'),
+      (3, 'Kappa', 'Bow', 'In an attempt to show the creature you mean no trouble, you bow to it. It returns the bow. The water on top of its head sloshes out, and it drops to the ground. You manage to run away.', 'CONTINUE'),
+      (3, 'Kappa', 'Attack', 'You run at the creature, intending to punch it in the face. Unbeknownst to you, the creature is extremely good at wrestling. It drowns you in the pond.', 'LOSE'),
+      (4, 'Ohaguro-bettari', 'Talk', 'You call out to the woman. She looks at you, or so you think - her face is a white, featureless mask, except for a huge mouth that shows blackened teeth. You run away.', 'CONTINUE'),
+      (4, 'Ohaguro-bettari', 'Run away', 'You run the other direction.', 'CONTINUE'),
+      (5, 'Haradashi', 'Talk', 'You kindly accept the invitation, and go inside. The woman offers you a drink, and reveals her torso that is a funny face. After you stop laughing, you leave.', 'CONTINUE'),
+      (5, 'Haradashi', 'Run away', 'You don''t trust the woman, and run away.', 'CONTINUE'),
+      (6, 'Mikoshi nyudo', 'Ignore and walk past', 'As you try to walk past him, he pierces your body with bamboo spears.', 'LOSE'),
+      (6, 'Mikoshi nyudo', 'Face it off', 'You bravely meet its eyes, then look from its head down to its feet. You yell, "You lost, I anticipated your trick!", and the monster vanishes.', 'CONTINUE'),
+      (6, 'Mikoshi nyudo', 'Run away', 'As you turn to run away, he pierces your body with bamboo spears.', 'LOSE'),
+      (7, 'Aobozu', 'Say no', 'You say: "No." The monk disappears.', 'CONTINUE'),
+      (7, 'Aobozu', 'Ignore him', 'You say nothing, intending to walk past him, when he lunges at you and knocks you out. You are found later, hanging by your neck from a tree.', 'LOSE'),
+      (8, 'Okuri inu', 'Play it off and sit down', 'Instead of getting up, you pretend that you meant to take a break, and exclaim loudly that this was a much needed break. When you look behind you again, the dog is still the same distance away, watching you. Eventually you walk off, and lose him.', 'CONTINUE'),
+      (8, 'Okuri inu', 'Get up', 'You jump straight up, but the dog has seen you stumble. It pounces on you, and rips you to shreds.', 'LOSE'),
+      (9, 'Aonyobu', 'Go in', 'Tired from being lost in the woods, you go in. Closer up, you can see that her many layers of kimono are old and tattered, and as she turns towards you, you see her face is ancient below the white facepaint and blackened teeth of the old courtiers. She charges at you, and devours you.', 'LOSE'),
+      (9, 'Aonyobu', 'Walk back into the woods', 'Although it''s tempting to take a break, you don''t want to risk whatever might await you in the house, and walk back into the woods instead.', 'CONTINUE'),
+      (10, 'Nureonna', 'Refuse to help', 'You run past the shoreline, yelling "No thank you!", hiding your face with your hand from awkwardness.', 'CONTINUE'),
+      (10, 'Nureonna', 'Hold the baby', 'You take the baby from the woman, and the bundle suddenly becomes very heavy in your hands. You find yourself unable to move as the woman turns into an enormous sea serpent, and drains your body of blood.', 'LOSE')
+      ;

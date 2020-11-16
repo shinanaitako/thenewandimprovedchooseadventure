@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${ENV_SERVICEDB_MYSQL_HOST}:${ENV_SERVICEDB_MYSQL_PORT}/${ENV_DB_NAME}
+    username: ${ENV_DB_SERVICE_USER}
+    password: ${ENV_DB_SERVICE_PASSWORD}
+  h2:
+    console:
+      enabled: true
+
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${ENV_DB_FLYWAY_USER}
+    password: ${ENV_DB_FLYWAY_PASSWORD}
+    locations: classpath:db/migration/
+    table: 'schema_version'
+
+ENV_DB_NAME: chooseadventure
+ENV_SERVICEDB_MYSQL_HOST: localhost
+ENV_SERVICEDB_MYSQL_PORT: 3306
+ENV_DB_SERVICE_USER: chooseadventure
+ENV_DB_SERVICE_PASSWORD: q1w2e3r4
+ENV_DB_FLYWAY_USER: flyway
+ENV_DB_FLYWAY_PASSWORD: q1w2e3r4
+
